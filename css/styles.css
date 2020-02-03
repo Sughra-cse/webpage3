@@ -1,0 +1,131 @@
+*{
+    margin: 0 px;
+    padding: 0 px;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.container1{
+    padding: 10px;
+    margin: 10px;
+}
+.hero-mobile{
+    display: block;
+    width: 100%;
+}
+.container3{
+    padding: 10px;
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.container3 h1{
+   letter-spacing: 1pc;
+}
+.hero-desktop{
+    display:none;
+}
+.container3 h1 span{
+    color: hsl(0, 36%, 70%);
+font-weight: lighter;
+}
+.container3 p{
+    color:hsl(0, 36%, 70%)
+}
+.container3 input{
+ border-radius: 35px 35px 35px 35px;
+ padding: 15px 60px 15px 15px;
+border-color:hsl(0, 6%, 24%) ;
+}
+.container3 input:hover{
+    border-color: hsl(0, 93%, 68%);
+    cursor: pointer;
+}
+.container3 svg.arrow:hover{
+    cursor: pointer;
+    background-color: hsla(0, 78%, 67%, 0.493);
+}
+.container3 svg.arrow{
+    background-color:hsl(0, 93%, 68%) ;
+ /* shape-margin:linear-gradient(135,hsl(0, 0%, 100%), to hsl(0, 100%, 98%)); */
+ /* border-radius: 35px 35px 35px 35px; */
+/* padding: 19px 20px 19px 20px ; */
+shape-image-threshold : linear-gradient(135, hsl(0, 0%, 100%), to hsl(0, 100%, 98% ));
+shape-outside: linear-gradient(hsl(0, 80%, 86%), to hsl(0, 74%, 74%)) ;
+}
+@media (min-width:900px){
+    .container{
+        width:90;
+        background-image:url(/images/bg-pattern-desktop.svg);
+    margin: 0 auto;
+    }
+    /* .image{
+        display: block;
+        box-sizing: border-box;
+        background: url('images/hero-desktop') no-repeat;
+        -moz-box-sizing: border-box; */
+        /* float:right; */
+        /* width: 580px;; */
+        /* display: flex;  */
+        /* width:300px; */
+        /* height:70vh; */
+        /* padding-left:auto; */
+         /* height: 100vh;  */
+
+ 
+    .hero-desktop{
+       display:block;
+       float: right;
+       width:50vh;
+       height: 100vh;
+}
+    .hero-mobile{
+        display: none;
+    }
+    .container3{
+        float: left;
+        text-align: left;
+    }
+    .container3 input{
+margin-top: 55px;
+    }
+            .container1{
+                margin-top: 40px;
+                float:left;
+                width:30vh;
+                margin-bottom: 40px;
+            }
+
+}       
+@media (min-width:1100px)  {
+    .container{
+        width:80%;
+        background-image:url(/images/bg-pattern-desktop.svg);
+    margin:0 auto;
+    } 
+    .hero-desktop{
+        display:block;
+        float: right;
+        width:50%;
+        height: 100vh;
+ }
+     .hero-mobile{
+         display: none;
+     }
+     .container3{
+         float: left;
+         width:50vh;
+         text-align: left;
+     }
+     .container3 input{
+ margin-top: 30px;
+     }
+             .container1{
+                 float:left;
+                 width:50vh;
+                 margin-bottom: 40px;
+             }
+}  
