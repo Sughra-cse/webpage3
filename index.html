@@ -6,6 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css"/>
     <title>WebPage</title>
+    <script>
+    function myfunc(){
+        var a = document.myform.email.value;
+    if(a.indexOf('@')<=0){
+        document.getElementById('message').innerHTML = "Please Provide a valid email address";
+        // document.getElementById('mes').innerHTML = <img src="images/icon-error.svg" />;
+        return false;
+    }
+        if((a.charAt(a.length-4)!=".")||(a.charAt(a.length-3)!=".")){
+            document.getElementById('message').innerHTML ="Please  Provide a valid email address";
+        return false; 
+        }
+    
+    }
+    </script>
 </head>
 <body class="container" >
     <div class="container1">
@@ -18,8 +33,11 @@
     <div class="container3">
         <h1><span>WE'RE</span> <br><strong>COMING<br>SOON</strong></h1>
     <p>Hello fellow shoppers!We're currently building<br> our new fashion store.Add your email<br> below to stay up-to-date with <br>announcements and our launch deals. </p>
-    <input type="email" placeholder="Email Address" />
-<button class="arrow"><a><img src="images/icon-arrow.svg" alt="image"/></a></button>
-   <button class="error"><a><img src="images/icon-error.svg"/></a></button>
+    <form name="myform" onsubmit="return myfunc()">
+            <input type="text" value="" name="email" placeholder="Email Address"/>
+<span id="mes"></span>
+            <p class="error" id="message"></p>
+            <button class="arrow" type="submit"><a><img src="images/icon-arrow.svg" alt="image"/></a></button>
+    </form> <!-- <button class="error" ><a><img src="images/icon-error.svg"/></a></button> -->
 </body>
 </html>

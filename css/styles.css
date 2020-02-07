@@ -42,7 +42,6 @@ border-color:hsl(0, 6%, 24%) ;
 }
 .container3 input:hover{
     border-color: hsl(0, 93%, 68%);
-    cursor: pointer;
 }
 .container3 button.arrow:hover{
     cursor: pointer;
@@ -58,13 +57,18 @@ margin-left: -38px;
 /* shape-image-threshold : linear-gradient(135, hsl(0, 0%, 100%), to hsl(0, 100%, 98% )); */
 /* shape-outside: linear-gradient(hsl(0, 80%, 86%), to hsl(0, 74%, 74%)) ; */
 }
-
-.container3 button.error:hover{
+.container3 p.error{
+    color:hsl(0, 93%, 68%);
+}
+/* 
+.container3 p.error{
     margin-left: -109px;
     border-radius: 50%;
     padding: 0px;
     display: inline;
-}
+    background-color:hsl(0, 93%, 68%) ;
+
+} */
 @media (min-width:900px){
     .container{
         width:90;
