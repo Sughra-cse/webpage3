@@ -36,9 +36,10 @@ font-weight: lighter;
     color:hsl(0, 36%, 70%)
 }
 .container3 input{
- border-radius: 35px 35px 35px 35px;
+ border-radius: 35px;
  padding: 15px 60px 15px 15px;
 border-color:hsl(0, 6%, 24%) ;
+float: left;
 }
 .container3 input:hover{
     border-color: hsl(0, 93%, 68%);
@@ -53,12 +54,16 @@ border-color:hsl(0, 6%, 24%) ;
  /* shape-margin:linear-gradient(135,hsl(0, 0%, 100%), to hsl(0, 100%, 98%)); */
  border-radius: 35px;
 padding: 15px 30px 15px 30px ;
-margin-left: -38px;
+margin-left: -60px;
+float: left;
+
+
 /* shape-image-threshold : linear-gradient(135, hsl(0, 0%, 100%), to hsl(0, 100%, 98% )); */
 /* shape-outside: linear-gradient(hsl(0, 80%, 86%), to hsl(0, 74%, 74%)) ; */
 }
 .container3 p.error{
     color:hsl(0, 93%, 68%);
+    display: block;
 }
 /* 
 .container3 p.error{
@@ -75,20 +80,6 @@ margin-left: -38px;
         background-image:url(/images/bg-pattern-desktop.svg);
     margin: 0 auto;
     }
-    /* .image{
-        display: block;
-        box-sizing: border-box;
-        background: url('images/hero-desktop') no-repeat;
-        -moz-box-sizing: border-box; */
-        /* float:right; */
-        /* width: 580px;; */
-        /* display: flex;  */
-        /* width:300px; */
-        /* height:70vh; */
-        /* padding-left:auto; */
-         /* height: 100vh;  */
-
- 
     .hero-desktop{
        display:block;
        float: right;
@@ -105,6 +96,10 @@ margin-left: -38px;
     .container3 input{
 margin-top: 55px;
     }
+    
+    .container3 button.arrow{
+        margin-top: 50px;
+    }
             .container1{
                 margin-top: 40px;
                 float:left;
@@ -115,7 +110,7 @@ margin-top: 55px;
 }       
 @media (min-width:1100px)  {
     .container{
-        width:80%;
+        width:90%;
         background-image:url(/images/bg-pattern-desktop.svg);
     margin:0 auto;
     } 
@@ -130,12 +125,15 @@ margin-top: 55px;
      }
      .container3{
          float: left;
-         width:50vh;
+         /* width:50vh; */
          text-align: left;
      }
-     .container3 input{
- margin-top: 30px;
-     }
+
+            .container3 button.arrow{
+        
+                margin-top: 50px;
+          
+            }
              .container1{
                  float:left;
                  width:50vh;
